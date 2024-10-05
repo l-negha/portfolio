@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
     <link rel ="stylesheet" href="style.css">
-    <link rel ="stylesheet" href="media queries.css">
-   
-    
+       
 </head>
 <body>
+  <div class="background">
     <nav id="desktop-nav">
         <div class="logo">NEGHA L</div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
+          <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -38,7 +37,10 @@
           </div>
         </div>
       </nav>
-      
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assests/profile.jpg" alt="Negha L profile picture" />
+          </div>
         <div class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
           <h1 class="title">Negha L</h1>
@@ -46,7 +48,7 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2"
-              onclick="window.open('D:\portfolio\assests\Negha Resume  .pdf')"
+              onclick="window.open('./assests/resume.pdf')"
             >
               Download CV
             </button>
@@ -55,69 +57,74 @@
             </button>
           </div>
           <div id="socials-container">
-            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" ]
+            <img src="./assests/linkedin.png" alt="My LinkedIn profile" class="icon" ]
 
               onclick="location.href='https://www.linkedin.com/in/negha24'"
             />
-            <img
-              src="D:\portfolio\assests\github.png"
+            <img src="./assests/github.png"
               alt="My Github profile"
               class="icon"
               onclick="location.href='https://github.com/l-negha'"
             />
+            
           </div>
         </div>
+       
       </section>
       <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
           <div class="section__pic-container">
-            
+            <img
+              src=".\assests\about-pic.svg"
+              alt="Profile picture"
+              class="about-pic"
+            />
           </div>
-          <div class="about-details-container">
+          <div class="about-details-container"></div>
             <div class="about-containers">
               <div class="details-container">
                 <img
-                  src="D:\portfolio\assests\experience.png"
+                  src=".\assests\experience.png"
                   alt="Experience icon"
                   class="icon"
                 />
-                <h3>Experience</h3>
-                <p> Data Science and Business Analysis Intern<br />The Sparks Foundation
-                  </p>
-                  <p> Data Science Intern 
-                    <br />Computational Intelligence Research
-                    Foundation
-                  </p>
-                  <p> Web development Intern 
-                    <br />Edify Techno Solutions
-                  </p>
-                  <p> Data Analyst Intern 
-                    <br />Technohacks 
-                  </p>
+                <h3>Experience</h3><br>
+                <h3> Data Science and Business Analysis Intern</h3><p>The Sparks Foundation
+                  </p><br>
+                  
+                  <h3> Web development Intern</h3>
+                   <p>Edify Techno Solutions</p>
+                  
               </div>
+          
               <div class="details-container">
                 <img
-                  src="D:\portfolio\assests\education.png"
+                  src="./assests/education.png"
                   alt="Education icon"
                   class="icon"
                 />
                 <h3>Education</h3>
-                <p>BE Computer Science and Engineering With 8.4 CGPA</p>
+                <h4>Class 10th</h4><p>Matriculation with 90.5</p><br>
+
+                <h4>Class 12th</h4><p>(senior secondary) with 90.5</p><br>
+                
+                <h4>BE</h4><p> Computer Science of Engineering With 8.4 CGPA</p><br>
               </div>
             </div>
             <div class="text-container">
-              <p>
-                Aspiring Software Engineer & Data Analyst
-              I am a passionate software engineer and data analyst with a strong foundation in both software development and data science. My journey includes completing multiple courses and internships in data analysis, data science, and software development. I have successfully developed two key projects: an Employee Management System and a Power BI Dashboard, showcasing my technical proficiency and problem-solving abilities. Additionally, I worked on the Naan Mudhalvan project focusing on image recognition using IBM Cloud Visual Recognition, further honing my skills in AI and cloud technologies.
-              
+              <h3>
+                Aspiring Software Engineer & Data Analyst</h3>
+                <p>With expertise in software development, data science, and AI technologies. I have hands-on experience developing solutions like an Employee Management System and a Power BI Dashboard, showcasing my problem-solving abilities and technical proficiency. I’ve also contributed to the Naan Mudhalvan project, working on image recognition using IBM Cloud Visual Recognition.
+
+                  I’ve completed AWS Cloud Foundations and AWS Machine Learning for NLP, alongside the Microsoft Learn AI Skills Challenge, enhancing my cloud computing and AI knowledge. My passion for innovation drives me to continually learn and apply cutting-edge technologies to solve complex challenges efficiently.  
               </p>
             </div>
           </div>
         </div>
         <img
-        src="D:\portfolio\assests\arrow.png"
+        src="./assests/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#skills'"
@@ -129,11 +136,11 @@
       <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="skills-sub-title">Technical skills</h2>
+            <h2 class="skills-sub-title">Technical skills</h2><br>
             <div class="article-container">
               <article>
                 <img
-                  src="D:\portfolio\assests\html.png.jpg"
+                  src="./assests/html.png.jpg"
                   alt="skills icon"
                   class="icon"
                 />
@@ -144,7 +151,7 @@
               </article>
               <article>
                 <img
-                  src="D:\portfolio\assests\css.png.jpg"
+                  src="./portfolio/assests/css.png.jpg"
                   alt="skills icon"
                   class="icon"
                 />
@@ -155,7 +162,7 @@
               </article>
               <article>
                 <img
-                  src="D:\portfolio\assests\js.png.jpg"
+                  src="./assests/js.png.jpg"
                   alt="skills icon"
                   class="icon"
                 />
@@ -166,7 +173,7 @@
               </article>
               <article>
                 <img
-                  src="D:\portfolio\assests\Java-Logo.png"
+                  src="./assests/Java-Logo.png"
                   alt="skills icon"
                   class="icon"
                 />
@@ -177,7 +184,7 @@
               </article>
               <article>
                 <img
-                  src="D:\portfolio\assests\pythonlogo.png"
+                  src="./assests/pythonlogo.png"
                   alt="skills icon"
                   class="icon"
                 />
@@ -188,7 +195,7 @@
               </article>
               <article>
                 <img
-                  src="D:\portfolio\assests\github.png"
+                  src="./assests/github.png"
                   alt="skills icon"
                   class="icon"
                 />
@@ -199,7 +206,7 @@
               </article>
               <article>
                 <img
-                  src="D:\portfolio\assests\REACT-JS.png"
+                  src="./assests/REACT-JS.png"
                   alt="skills icon"
                   class="icon"
                 />
@@ -211,7 +218,7 @@
            
           <article>
             <img
-              src="D:\portfolio\assests\excel.jpeg"
+              src="./assests/excel.jpeg"
               alt="skills icon"
               class="icon"
             />
@@ -222,7 +229,7 @@
           </article>
           <article>
             <img
-              src="D:\portfolio\assests\powerbi.png"
+              src="./assests/powerbi.png"
               alt="skills icon"
               class="icon"
             />
@@ -233,7 +240,7 @@
           </article>
           <article>
             <img
-              src="D:\portfolio\assests\sql.jpeg"
+              src="./assests/sql.jpeg"
               alt="skills icon"
               class="icon"
             />
@@ -243,7 +250,7 @@
             </div>
           </article>
         <img
-          src="D:\portfolio\assests\arrow.png"
+          src="./assests/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
           onclick="location.href='./#experience'"
@@ -254,70 +261,172 @@
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
           <div class="about-containers">
-            
             <div class="details-container">
               <h2 class="experience-sub-title">WEB DEVELOPMENT</h2>
               <div class="article-container">
                 <article>
-                  <src="D:\portfolio\assests\checkmark.png"
+                  <img
+                    src="./assests/cm.png"
                     alt="Experience icon"
                     class="icon"
                   />
                   <div>
-                   
                     <h3>HTML</h3>
-                    </div>
+                  </div>
                 </article>
                 <article>
                   <img
-                    src="D:\portfolio\assests\checkmark.png"
+                    src="./assests/cm.png"
                     alt="Experience icon"
                     class="icon"
                   />
                   <div>
                     <h3>CSS</h3>
-                    
                   </div>
                 </article>
                 <article>
                   <img
-                    src="D:\portfolio\assests\checkmark.png"
+                    src="./assests/cm.png"
                     alt="Experience icon"
                     class="icon"
                   />
                   <div>
                     <h3>MYSQL</h3>
-                    
                   </div>
                 </article>
                 <article>
                   <img
-                    src="D:\portfolio\assests\checkmark.png"
+                    src="./assests/cm.png"
                     alt="Experience icon"
                     class="icon"
                   />
                   <div>
                     <h3>JAVA</h3>
-                    
                   </div>
                 </article>
                 <article>
                   <img
-                    src="D:\portfolio\assests\checkmark.png"
+                    src="./assests/cm.png"
                     alt="Experience icon"
                     class="icon"
                   />
                   <div>
                     <h3>JAVASCRIPT</h3>
-                    
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assests/cm.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Problem Solving</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assests/cm.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Logical Thinking</h3> 
                   </div>
                 </article>
               </div>
             </div>
           </div>
         </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">DATA SCIENCE AND BUSINESS ANALYSIS</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assests/cm.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Python</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assests/cm.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>PowerBI</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assests/cm.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Advanced Excel</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assests/cm.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Data Visualization</h3>
+            </div>
+            </article>
+            <article>
+              <img
+                src="./assests/cm.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Data Cleanup</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assests/cm.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Data Analysis</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assests/cm.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Positive Attitude</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assests/cm.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Time Management</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
         <img
-          src="D:\portfolio\assests\arrow.png"
+          src="./assests/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
           onclick="location.href='./#projects'"
@@ -331,12 +440,12 @@
             <div class="details-container color-container">
               <div class="article-container">
                 <img
-                  src="D:\portfolio\assests\POWER BI DESKTOP.jpg"
+                  src="./assests/POWER BI DESKTOP.jpg"
                   alt="Project 1"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Project One</h2>
+              <h2 class="experience-sub-title project-title">PowerBI Dashboard</h2>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
@@ -350,12 +459,12 @@
             <div class="details-container color-container">
               <div class="article-container">
                 <img
-                  src="D:\portfolio\assests\Employee-Management-System.jpg"
+                  src="./assests/Employee-Management-System.jpg"
                   alt="Project 2"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <h2 class="experience-sub-title project-title">Employee Management System</h2>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
@@ -369,12 +478,12 @@
             <div class="details-container color-container">
               <div class="article-container">
                 <img
-                  src="D:\portfolio\assests\image-recognition.png"
+                  src="./assests/image-recognition.png"
                   alt="Project 3"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <h2 class="experience-sub-title project-title">Image Recognition</h2>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
@@ -388,35 +497,42 @@
           </div>
         </div>
         <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
-      </section>
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assests/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:lnegha2403@gmail.com">lnegha2403@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assests/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/negha24/">LinkedIn</a></p>
           <div class="contact-info-container">
-            <img
-              src="D:\portfolio\assests\email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:lnegha2403@gmail.com">lnegha2403@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="D:\portfolio\assests\linkedin.png"
+            <img src="./assests/github.png"
               alt="LinkedIn icon"
               class="icon contact-icon"
             />
-            <p><a href="https://www.linkedin.com/in/negha24">LinkedIn</a></p>
+            <p><a href="https://github.com/l-negha">Github</a></p>
           </div>
         </div>
-      </section>
-      <footer>
+      </div>
+    </section>
+    <footer>
         <nav>
           <div class="nav-links-container">
             <ul class="nav-links">
@@ -424,7 +540,7 @@
               <li><a href="#experience">Experience</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href="#skills">Contact</a></li>
+              <li><a href="#skills">Skills</a></li>
             </ul>
           </div>
         </nav>
